@@ -1,1 +1,1 @@
--- Detalles del proyecto
+blog de cuidado animal-- Detalles del proyecto
