@@ -6,39 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Animal</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
 
 </head>
 
 <body>
-
     <!-- Menú de navegación -->
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Quiénes somos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div id="global-header"></div>
 
     <!-- Encabezado principal -->
-    <header>
-        <h1>Mundo Animal 🐾</h1>
-        <h2>Un espacio para conocer y cuidar a nuestros animales</h2>
+    <div class="hero-banner">
+        <img src="img/mascotas.jpg" alt="Animales domésticos" class="hero-bg-img">
 
-        <p>
-            Bienvenidos a Mundo Animal, un blog dedicado a los animales
-            domésticos y a la importancia de brindarles amor, cuidado y
-            un hogar seguro.
-        </p>
+        <div class="hero-text-content">
+            <h1>Mundo Animal 🐾</h1>
+            <h2>Un espacio para conocer y cuidar a nuestros animales</h2>
 
-        <img src="img/mascotas.jpg" alt="Animales domésticos">
-    </header>
+            <p>
+                Bienvenidos a Mundo Animal, un blog dedicado a los animales
+                domésticos y a la importancia de brindarles amor, cuidado y
+                un hogar seguro.
+            </p>
+        </div>
+    </div>
 
     <!-- Contenido principal -->
     <main>
 
-        <section>
+        <section class="intro-section">
             <h2>Conoce a nuestros compañeros</h2>
 
             <p>
@@ -49,59 +46,62 @@
         </section>
 
         <!-- Perros -->
-        <section>
-            <h3>🐶 Perros</h3>
+        <div class="articles-grid">
 
-            <p>
-                Los perros son animales muy sociables y pueden convertirse
-                en grandes compañeros. Necesitan una alimentación adecuada,
-                ejercicio, higiene y mucho cariño.
-            </p>
+            <section>
+                <h3>🐶 Perros</h3>
 
-            <img src="img/perro.jpg" alt="Perro doméstico">
-        </section>
+                <p>
+                    Los perros son animales muy sociables y pueden convertirse
+                    en grandes compañeros. Necesitan una alimentación adecuada,
+                    ejercicio, higiene y mucho cariño.
+                </p>
 
-        <!-- Gatos -->
-        <section>
-            <h3>🐱 Gatos</h3>
+                <img src="img/perro.jpg" alt="Perro doméstico">
+            </section>
 
-            <p>
-                Los gatos son animales independientes, curiosos y cariñosos.
-                Para mantenerlos saludables necesitan una buena alimentación,
-                un espacio limpio y atención veterinaria.
-            </p>
+            <!-- Gatos -->
+            <section>
+                <h3>🐱 Gatos</h3>
 
-            <img src="img/gato.jpg" alt="Gato doméstico">
-        </section>
+                <p>
+                    Los gatos son animales independientes, curiosos y cariñosos.
+                    Para mantenerlos saludables necesitan una buena alimentación,
+                    un espacio limpio y atención veterinaria.
+                </p>
 
-        <!-- Conejos -->
-        <section>
-            <h3>🐰 Conejos</h3>
+                <img src="img/gato.jpg" alt="Gato doméstico">
+            </section>
 
-            <p>
-                Los conejos son animales tranquilos y sensibles. Necesitan
-                una alimentación adecuada, espacio para moverse y un ambiente
-                limpio y seguro.
-            </p>
+            <!-- Conejos -->
+            <section>
+                <h3>🐰 Conejos</h3>
 
-            <img src="img/conejo.jpg" alt="Conejo doméstico">
-        </section>
+                <p>
+                    Los conejos son animales tranquilos y sensibles. Necesitan
+                    una alimentación adecuada, espacio para moverse y un ambiente
+                    limpio y seguro.
+                </p>
 
-        <!-- Hámsteres -->
-        <section>
-            <h3>🐹 Hámsteres</h3>
+                <img src="img/conejo.jpg" alt="Conejo doméstico">
+            </section>
 
-            <p>
-                Los hámsteres son pequeños animales que requieren cuidados
-                especiales. Es importante proporcionarles una alimentación
-                equilibrada, agua y un espacio adecuado para vivir.
-            </p>
+            <!-- Hámsteres -->
+            <section>
+                <h3>🐹 Hámsteres</h3>
 
-            <img src="img/hamster.jpg" alt="Hámster doméstico">
-        </section>
+                <p>
+                    Los hámsteres son pequeños animales que requieren cuidados
+                    especiales. Es importante proporcionarles una alimentación
+                    equilibrada, agua y un espacio adecuado para vivir.
+                </p>
 
+                <img src="img/hamster.jpg" alt="Hámster doméstico">
+            </section>
+
+        </div>
         <!-- Cuidados -->
-        <section>
+        <section class="care-banner">
             <h2>Cuidados básicos para nuestras mascotas ❤️</h2>
 
             <h3>Alimentación</h3>
@@ -138,10 +138,8 @@
     </main>
 
     <!-- Pie de página -->
-    <footer>
-        <p>Mundo Animal 🐾</p>
-        <p>Blog dedicado a los animales domésticos</p>
-    </footer>
+    <div id="global-footer"></div>
+    <script src="js/components.js"></script>
 
 </body>
 
