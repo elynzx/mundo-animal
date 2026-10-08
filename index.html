@@ -4,140 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Animal</title>
+    <title>Mundo Animal - Inicio</title>
+    <!-- CDN CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Unico archivo CSS personalizado del sitio -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="bg-light text-dark">
 
-    <!-- Menú de navegación -->
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Quiénes somos</a>
-        <a href="contacto.html">Contacto</a>
+    <!-- Navbar de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/image_8c855684.png" alt="Logo Mundo Animal" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
+                Mundo Animal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Encabezado principal -->
-    <header>
-        <h1>Mundo Animal 🐾</h1>
-        <h2>Un espacio para conocer y cuidar a nuestros animales</h2>
-
-        <p>
-            Bienvenidos a Mundo Animal, un blog dedicado a los animales
-            domésticos y a la importancia de brindarles amor, cuidado y
-            un hogar seguro.
-        </p>
-
-        <img src="img/mascotas.jpg" alt="Animales domésticos">
+    <!-- Encabezado principal / Hero -->
+    <header class="bg-success text-white py-5 mb-4 text-center shadow-sm">
+        <div class="container">
+            <img src="assets/Captura.PNG" alt="Animales domésticos" class="img-fluid rounded mb-3 shadow" style="max-height: 250px; object-fit: cover; width: 100%;">
+            <h1 class="display-4 fw-bold">Mundo Animal</h1>
+            <p class="lead">Un espacio para conocer y cuidar a nuestros animales</p>
+            <p class="col-md-8 mx-auto">
+                Bienvenidos a Mundo Animal, un blog dedicado a los animales domésticos y a la importancia de brindarles amor, cuidado y un hogar seguro.
+            </p>
+        </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main>
+    <!-- Layout Principal con Sistema de Grid de Bootstrap -->
+    <div class="container my-4 flex-grow-1">
+        <div class="row">
+            
+            <!-- Columna Izquierda: Reservada para Publicidad -->
+            <aside class="col-md-2 d-none d-md-block border-end text-muted p-2">
+                <div class="p-3 bg-white border rounded text-center">
+                    <small>Espacio para publicidad futura</small>
+                </div>
+            </aside>
 
-        <section>
-            <h2>Conoce a nuestros compañeros</h2>
+            <!-- Columna Centro: Contenido Principal -->
+            <main class="col-md-8 px-md-4">
+                
+                <section class="mb-4 text-center">
+                    <h2 class="h3 text-success mb-3">Conoce a nuestros compañeros</h2>
+                    <p class="text-secondary fs-5">
+                        Los animales domésticos forman parte de muchas familias. Cada uno tiene diferentes características, necesidades y formas de relacionarse con las personas.
+                    </p>
+                </section>
 
-            <p>
-                Los animales domésticos forman parte de muchas familias.
-                Cada uno tiene diferentes características, necesidades
-                y formas de relacionarse con las personas.
+                <!-- Grid de Tarjetas con Carruseles Individuales -->
+                <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+                    
+                    <!-- 🐶 PERROS -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <!-- Carrusel Perros -->
+                            <div id="carouselPerros" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded-top">
+                                    <div class="carousel-item active">
+                                        <img src="assets/pexels-miami302-8343394.jpg" class="d-block w-100" alt="Perro doméstico 1" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/4bc108f1debff5233f723d856f48c267.jpg" class="d-block w-100" alt="Perro doméstico 2" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPerros" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPerros" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 text-dark">🐶 Perros</h3>
+                                <p class="card-text text-secondary">
+                                    Los perros son animales muy sociables y pueden convertirse en grandes compañeros. Necesitan una alimentación adecuada, ejercicio, higiene y mucho cariño.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 🐱 GATOS -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <!-- Carrusel Gatos -->
+                            <div id="carouselGatos" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded-top">
+                                    <div class="carousel-item active">
+                                        <img src="assets/pexels-ege-kaya-988612859-27116938.jpg" class="d-block w-100" alt="Gato doméstico 1" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/thekov-kitten-6645241_1920.jpg" class="d-block w-100" alt="Gato doméstico 2" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGatos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselGatos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 text-dark">🐱 Gatos</h3>
+                                <p class="card-text text-secondary">
+                                    Los gatos son animales independientes, curiosos y cariñosos. Para mantenerlos saludables necesitan una buena alimentación, un espacio limpio y atención veterinaria.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 🐰 CONEJOS -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <!-- Carrusel Conejos -->
+                            <div id="carouselConejos" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded-top">
+                                    <div class="carousel-item active">
+                                        <img src="assets/pexels-lucas-2076875-3730206.jpg" class="d-block w-100" alt="Conejo doméstico" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="assets/pexels-lucas-2076875-3730206.jpg" class="d-block w-100" alt="Gato doméstico 2" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselConejos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselConejos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 text-dark">🐰 Conejos</h3>
+                                <p class="card-text text-secondary">
+                                    Los conejos son animales tranquilos y sensibles. Necesitan una alimentación adecuada, espacio para moverse y un ambiente limpio y seguro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 🐹 HÁMSTERES -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <!-- Carrusel Hámsteres -->
+                            <div id="carouselHamsteres" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded-top">
+                                    <div class="carousel-item active">
+                                        <img src="assets/pexels-ellie-burgin-1661546-3362697.jpg" class="d-block w-100" alt="Hámster doméstico" style="height: 220px; object-fit: cover;">
+                                   </div>
+                                     <div class="carousel-item">
+                                        <img src="assets/zhaoli-jin-cgnDJkzWkTg-unsplash.jpg" class="d-block w-100" alt="Gato doméstico 2" style="height: 220px; object-fit: cover;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHamsteres" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselHamsteres" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h5 text-dark">🐹 Hámsteres</h3>
+                                <p class="card-text text-secondary">
+                                    Los hámsteres son pequeños animales que requieren cuidados especiales. Es importante proporcionarles una alimentación equilibrada, agua y un espacio adecuado para vivir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sección Cuidados -->
+                <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="assets/pexels-kuiyibo-15231402.jpg" class="img-fluid rounded-start" alt="..." style="height: 400px; object-fit: cover;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Cuidados Baicos para nuestras Mascotas</h5>
+        <p class="card-text">Alimentacion: Proporcionar alimentos adecuados según las necesidades de cada animal.</p>
+        <p class="card-text">Higiene: Mantener limpio su espacio y cuidar su higiene ayuda a prevenir enfermedades. </p>
+        <p class="card-text">Ejercicio: La actividad física ayuda a mantener a nuestras mascotas saludables y activas.</p>
+        <p class="card-text">Visitas al veterinario: Los controles veterinarios permiten cuidar su salud y detectar posibles problemas a tiempo.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+            </main>
+
+            <!-- Columna Derecha: Reservada para Noticias -->
+            <aside class="col-md-2 d-none d-md-block border-start text-muted p-2">
+                <div class="p-3 bg-white border rounded text-center">
+                    <small>Espacio para noticias futuras</small>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-1 fw-bold">Mundo Animal - Proyecto de Blog</p>
+            <p class="mb-0 text-muted small">
+                Integrantes del Equipo: <br>
+                • Juan Pérez (juan.perez@ficticio.com) <br>
+                • María Gómez (maria.gomez@ficticio.com)
             </p>
-        </section>
-
-        <!-- Perros -->
-        <section>
-            <h3>🐶 Perros</h3>
-
-            <p>
-                Los perros son animales muy sociables y pueden convertirse
-                en grandes compañeros. Necesitan una alimentación adecuada,
-                ejercicio, higiene y mucho cariño.
-            </p>
-
-            <img src="img/perro.jpg" alt="Perro doméstico">
-        </section>
-
-        <!-- Gatos -->
-        <section>
-            <h3>🐱 Gatos</h3>
-
-            <p>
-                Los gatos son animales independientes, curiosos y cariñosos.
-                Para mantenerlos saludables necesitan una buena alimentación,
-                un espacio limpio y atención veterinaria.
-            </p>
-
-            <img src="img/gato.jpg" alt="Gato doméstico">
-        </section>
-
-        <!-- Conejos -->
-        <section>
-            <h3>🐰 Conejos</h3>
-
-            <p>
-                Los conejos son animales tranquilos y sensibles. Necesitan
-                una alimentación adecuada, espacio para moverse y un ambiente
-                limpio y seguro.
-            </p>
-
-            <img src="img/conejo.jpg" alt="Conejo doméstico">
-        </section>
-
-        <!-- Hámsteres -->
-        <section>
-            <h3>🐹 Hámsteres</h3>
-
-            <p>
-                Los hámsteres son pequeños animales que requieren cuidados
-                especiales. Es importante proporcionarles una alimentación
-                equilibrada, agua y un espacio adecuado para vivir.
-            </p>
-
-            <img src="img/hamster.jpg" alt="Hámster doméstico">
-        </section>
-
-        <!-- Cuidados -->
-        <section>
-            <h2>Cuidados básicos para nuestras mascotas ❤️</h2>
-
-            <h3>Alimentación</h3>
-            <p>
-                Proporcionar alimentos adecuados según las necesidades
-                de cada animal.
-            </p>
-
-            <h3>Higiene</h3>
-            <p>
-                Mantener limpio su espacio y cuidar su higiene ayuda
-                a prevenir enfermedades.
-            </p>
-
-            <h3>Ejercicio</h3>
-            <p>
-                La actividad física ayuda a mantener a nuestras mascotas
-                saludables y activas.
-            </p>
-
-            <h3>Visitas al veterinario</h3>
-            <p>
-                Los controles veterinarios permiten cuidar su salud
-                y detectar posibles problemas a tiempo.
-            </p>
-
-            <h3>Amor y compañía</h3>
-            <p>
-                Además de sus necesidades físicas, nuestras mascotas
-                necesitan atención, respeto y cariño.
-            </p>
-        </section>
-
-    </main>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>Mundo Animal 🐾</p>
-        <p>Blog dedicado a los animales domésticos</p>
+        </div>
     </footer>
 
+</div>
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
