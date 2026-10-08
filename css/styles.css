@@ -29,3 +29,8 @@ main {
   margin: 0 auto;
   padding: 40px 20px;
 }
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+}
