@@ -14,64 +14,44 @@
 </head>
 
 <body>
-
     <div id="global-header"></div>
-
     <main>
 
         <section class="titulo">
-            <h1>¿Quiénes somos?</h1>
-
-            <div class="linea"></div>
+            <h1 class="text-success text-center mb-4">¿Quiénes somos?</h1>
+            <!---Titulo de Bootstrap con una margen buttom de 4 -->
         </section>
 
-        <section class="about-contenedor">
-
-            <div class="informacion">
-
-                <div class="dato">
-
-                    <p>
-                        En Mundo Animal somos un grupo de personas
-                        apasionadas por los animales y la naturaleza.
-                        Creamos este blog con el propósito de compartir
-                        información útil, consejos y curiosidades sobre
-                        el mundo animal.
-                    </p>
-
-                </div>
-
-                <div class="dato">
-
-                    <p>
-                        Creemos que cada animal merece respeto,
-                        cuidado y un entorno seguro. Por eso,
-                        queremos inspirar a más personas a conocer,
-                        valorar y proteger a todos los seres vivos.
-                    </p>
-
-                </div>
-
+        <section class="row align-items-center mb-5"> <!--- -->
+            <div class="col-lg-7">
+                <p>
+                    En Mundo Animal somos un grupo de personas
+                    apasionadas por los animales y la naturaleza.
+                    Creamos este blog con el propósito de compartir
+                    información útil, consejos y curiosidades sobre
+                    el mundo animal.
+                </p>
+                <p class="mb-0">
+                    Creemos que cada animal merece respeto,
+                    cuidado y un entorno seguro. Por eso,
+                    queremos inspirar a más personas a conocer,
+                    valorar y proteger a todos los seres vivos.
+                </p>
             </div>
-
-            <div class="imagen-animal">
-                <img src="./assets/gato.png" alt="Gato en un espacio natural">
+            <div class="col-lg-5 text-center">
+                <img src="assets/gato.png" alt="Gato en un espacio natural" class="img-fluid rounded-3">
             </div>
-
         </section>
 
 
-        <section class="proposito">
+        <section class="bg-success-subtle rounded-3 p-4">
 
-            <div class="titulo-seccion">
-                <h2>Nuestro propósito</h2>
-                <div class="linea"></div>
-            </div>
+            <h2 class="text-success text-center mb-4">Nuestro propósito</h2>
 
-            <div class="proposito-contenedor">
-
-                <article class="proposito-dato">
-                    <div class="icono-wrapper">
+            <div class="row row-cols-2 row-cols-lg-4 g-3 text-center">
+                <article class="col"> <!---nueva columna-->
+                    <div
+                        class="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center mx-auto mb-3 text-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -80,12 +60,13 @@
                                 d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
                         </svg>
                     </div>
-                    <h3>Informar</h3>
-                    <p>Con contenido confiable y útil.</p>
+                    <h3 class="h5 text-success">Informar</h3>
+                    <p class="text-secondary mb-0">Con contenido confiable y útil.</p>
                 </article>
 
-                <article class="proposito-dato">
-                    <div class="icono-wrapper">
+                <article class="col">
+                    <div
+                        class="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center mx-auto mb-3 text-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -93,12 +74,13 @@
                                 d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                         </svg>
                     </div>
-                    <h3>Inspirar</h3>
-                    <p>A cuidar y respetar a los animales.</p>
+                    <h3 class="h5 text-success">Inspirar</h3>
+                    <p class="text-secondary mb-0">A cuidar y respetar a los animales.</p>
                 </article>
 
-                <article class="proposito-dato">
-                    <div class="icono-wrapper">
+                <article class="col">
+                    <div
+                        class="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center mx-auto mb-3 text-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -107,12 +89,13 @@
                             <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
                         </svg>
                     </div>
-                    <h3>Crear conciencia</h3>
-                    <p>Sobre la importancia de su bienestar.</p>
+                    <h3 class="h5 text-success">Crear conciencia</h3>
+                    <p class="text-secondary mb-0">Sobre la importancia de su bienestar.</p>
                 </article>
 
-                <article class="proposito-dato">
-                    <div class="icono-wrapper">
+                <article class="col">
+                    <div
+                        class="icon-circle bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center mx-auto mb-3 text-success">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                             stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -122,18 +105,13 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg>
                     </div>
-                    <h3>Construir</h3>
-                    <p>Una comunidad amante de los animales.</p>
+                    <h3 class="h5 text-success">Construir</h3>
+                    <p class="text-secondary mb-0">Una comunidad amante de los animales.</p>
                 </article>
-
             </div>
-
         </section>
-
     </main>
-
     <div id="global-footer"></div>
-
     <script src="js/components.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
