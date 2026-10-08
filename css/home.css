@@ -3,6 +3,7 @@
   padding: 40px;
   margin-bottom: 40px;
   border-radius: 12px;
+
 }
 
 .hero-banner h1 {
@@ -113,3 +114,20 @@
   color: #333333;
   line-height: 1.5;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el texto */
+    margin-bottom: 10px;
+}
+.hero-logo {
+    width: 60px;  /* Ajusta este valor al tamaño que desees */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.hero-title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #1b4d3e; /* El color verde de tu diseño */
+}
+
