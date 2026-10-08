@@ -1,0 +1,54 @@
+#global-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid gray;
+  height: 80px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.3rem;
+  color: var(--tertiary-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.navbar a:hover {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.navbar a.active {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
